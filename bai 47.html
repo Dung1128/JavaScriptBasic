@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>bai 47</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<h3>Đối tượng (object) trong Javascript
+	</h3>
+	<p>Khởi tạo 1 đối tượng sinh viên: add thêm thuộc tính cho sinh viên</p>
+	<script type="text/javascript">
+		var _sinhvien =  new Object();
+		_sinhvien.hoTen ='';
+		_sinhvien.ngaySinh ='';
+		_sinhvien.email ='';
+
+		_sinhvien.addSinhVien = function(){
+			this.hoTen = 'Nguyen tran dung';
+			this.ngaySinh = '1995/11/28';
+			this.email = 'trandung1128@gmail.com'
+		}
+		_sinhvien.addSinhVien();
+		console.log(_sinhvien);
+
+		document.write(_sinhvien.hoTen + '<br/>');
+		document.write(_sinhvien.ngaySinh + '<br/>');
+		document.write(_sinhvien.email + '<br/>');
+	</script>
+	<img src="images/47.png">
+
+</body>
+</html>

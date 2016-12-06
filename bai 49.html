@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>bai 49</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<h3>Javascript Object Prototypes</h3>
+	<p>Ban đầu, đối tượng sinh viên có 2 thuộc tính: tên , email</p>
+	<p>Ta thêm thuộc tính bằng phương thức prototype</p>
+	<script type="text/javascript">
+		function _Persion()
+		{
+			this.hoTen = '';
+			this.email = '';
+			this.showPersion = function(){
+				document.write('Tên là: ' + this.hoTen + '<br/>');
+		        document.write('Email là: ' + this.email + '<br/>');
+			};
+
+			_Persion.prototype.gender = '';
+			_Persion.prototype.showGender = function(){
+				document.write('Giới tính là: ' + this.gender + '<br/>')
+			}
+
+		}
+
+		var _Student = new _Persion();
+		_Student.hoTen = 'Nguyen tran dung';
+		_Student.email = 'trandung1128@gmail.com';
+		_Student.gender = "Nam";
+
+		_Student.showPersion();
+		
+		_Student.showGender();
+		
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>bai 44</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<h3>Lệnh switch case trong Javascript</h3>
+
+	<script type="text/javascript">
+		alert("Kiểm tra tính chẵn lẻ của chữ số: ");
+		var t = prompt("Nhập số : ", '');
+		if( t == null)
+			t = 0;
+		var st = t%2;
+		switch(st)
+		{
+			case 0 :{
+				alert(t +" là số chẵn!");
+				break;
+			}
+			case 1:{
+				alert(t + " là số lẻ!");
+				break;
+			}
+			case null:{
+				alert("Bạn phải nhập số!");
+			}
+			default: { alert(t + " không phải là số!");
+			}
+
+		}
+	</script></center>
+
+</body>
+</html>

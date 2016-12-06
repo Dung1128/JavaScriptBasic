@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>bai 16</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<h3>DOM HTML</h3>
+	<script language="javascript">
+
+      function set_content()
+      {
+        document.getElementById("content").innerHTML = "<h1>Welcome</h1>";  
+      }
+       
+      function get_content()
+      {
+        var html = document.getElementById("content").innerHTML;
+        alert("Nội dung cần lấy là: " + html);        
+      }
+       
+    </script>
+    <div id="content">Hello</div>
+    <input type="button" value="Lấy nội dung" id="get_content" onclick="get_content()" />
+    <input type="button" value="Thay đổi nội dung" id="set_content" onclick="set_content()" />
+</body>
+</html>

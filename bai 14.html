@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bai 14</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<h3>Sự kiện trong javascript</h3>
+	<script type="text/javascript">
+		function input_change(){
+			var input_msg = document.getElementById('id_Msg');
+			var div = document.getElementById('result');
+			div.innerHTML = input_msg.value;
+		}
+	</script>
+	<input type="text" name="msg" value="" id="id_Msg" onkeyup ="input_change()">
+	<div id="result">
+		
+	</div>
+
+</body>
+</html>

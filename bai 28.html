@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>bai 28</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<h3>DOM Nodes trong Javascript</h3>
+	<div id="TOP">
+            Xin chào các bạn!  
+        </div>
+       
+        <input type="button" value="Append" id="btn-append"/>
+       
+        <script language="javascript">
+          // Lấy button
+          var button = document.getElementById("btn-append");
+           
+          // Thêm sự kiện click cho button
+          button.addEventListener("click", function(){
+            // Tạo mới một thẻ h1
+            var h1 = document.createElement("h4");
+ 
+            // Thêm nội dung HTML vào thẻ h1
+            h1.innerHTML = "Học DOM Nodes "
+ 
+            // Đưa thẻ h1 vào trong thẻ div có id=TOP
+            document.getElementById('TOP').appendChild(h1);
+          });
+        </script>
+        
+
+
+</body>
+</html>

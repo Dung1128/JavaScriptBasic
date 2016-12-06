@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>bai 15</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<h3>Return true/false của Events trong Javascript</h3>
+        <script language="javascript">
+          function validate()
+          {
+             
+             var username = document.getElementById("username").value;
+             var password = document.getElementById("password").value;
+             var confirm_password = document.getElementById("comfirm-password").value;
+
+            if (username == ""){
+              alert("Bạn chưa nhập tên đăng nhập");
+              return false;
+            }
+           
+            if (password == ""){
+              alert("Bạn chưa nhập mật khẩu");
+              return false;
+            }
+             
+           
+            if (password != confirm_password){
+              alert("Mật khẩu nhập lại không đúng");
+              return false;
+            }
+           
+            return true;
+          }
+        </script>
+        <form method="post" action="">
+            Username: <input type="text" value="" name="username" id="username"/> <br/>
+            Password: <input type="text" value="" name="password" id="password"/> <br/>
+            Comfirm Password: <input type="text" value="" name="comfirm-password" id="comfirm-password"/> <br/>
+            <input type="submit" value="Register" onclick="return validate()" />        
+        </form>
+    </body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>bai 36</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<h3>setTimeout() và setInterval() trong Javascript</h3>
+	<script language="javascript">
+	    var do_alert = setTimeout(function(){
+	        alert("timeout : 3000");
+	    }, 2000);
+	 
+	    function clearAlert()
+	    {
+	        clearTimeout(do_alert);
+	    }
+	    var interval_obj=setInterval(function(){_Alert()}, 2000);
+
+	    function _Alert(){
+	    	alert("interval: 3000");
+	    }
+	    
+
+		function stop(){
+			clearInterval(interval_obj);
+		}
+
+	</script>
+ 
+	<input type="button" onclick="clearAlert()" value="ClearTimeOut" />
+	<input type="button" onclick="stop()" value="ClearInterval" />
+
+</body>
+</html>

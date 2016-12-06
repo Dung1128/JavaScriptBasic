@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>bai 41</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<h3>Hàm xử lý Number trong Javascript</h3>
+	<script type="text/javascript">
+		var x = "12.12 hello" ;
+		document.write("String: \""+ x + "\"");
+
+		function convertParseInt(){
+			var html = document.getElementById("contentParseInt").innerHTML = parseInt(x);
+		}
+		function convertParseFloat(){
+			var html = document.getElementById("contentParseFloat").innerHTML = parseFloat(x);
+		}
+
+		
+	</script>
+	<h4>ParseInt(): </h4> <p id="contentParseInt"></p>
+	<input type="submit" value="show" onclick="convertParseInt()"><br/>
+	<h4>ParseFloat(): </h4> <p id="contentParseFloat"></p>
+	<input type="submit" value="show" onclick="convertParseFloat()"><br/>
+</body>
+</html>

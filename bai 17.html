@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>bai 17</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<h3>DOM - CSS</h3>
+
+	<script language="javascript">
+            function change_background()
+            {
+               document.getElementById("message").style.background = 'gray';
+            }
+ 
+            function change_color()
+            {
+               document.getElementById("message").style.color = 'yellow';
+            }
+ 
+            function change_height()
+            {
+               document.getElementById("message").style.height = '200px';
+            }
+ 
+            function change_font_size()
+            {
+               document.getElementById("message").style.fontSize = '50px';
+            }
+        </script>
+        <div id="message">
+          Demo DOM - CSS
+        </div>
+        <input type="button" value="Change backgroud" onclick="change_background()"/>
+        <input type="button" value="Change color" onclick="change_color()"/>
+        <input type="button" value="Change height" onclick="change_height()"/>
+        <input type="button" value="Change fontsize" onclick="change_font_size()"/>
+
+        <script language="javascript">
+          function validate()
+          {
+            
+             var username = document.getElementById("username").value;
+             var password = document.getElementById("password").value;
+             
+            
+            var message = document.getElementById("message");
+             
+            
+            if (username == "" || password == ""){
+                message.innerHTML = "Bạn chưa nhập đầy đủ thông tin!";
+                message.style.color = "red";
+            }
+             
+            else{
+                message.innerHTML = "Chúc mừng ban, validate thành công!";
+                message.style.color = "blue";
+            }
+             
+          }
+        </script>
+        <br/>
+        Username: <input type="text" value="" id="username" /> <br/>
+        Username: <input type="password" value="" id="password" /> <br/>
+        <div id="message"></div>
+        <input type="button" value="Login" onclick="validate()"/>
+
+</body>
+</html>

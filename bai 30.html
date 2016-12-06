@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>bai 30</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<h3>BOM - Window trong Javascript</h3>
+	<script type="text/javascript">
+			var width = window.innerWidth
+		|| document.documentElement.clientWidth
+		|| document.body.clientWidth;
+		 
+		var height = window.innerHeight
+		|| document.documentElement.clientHeight
+		|| document.body.clientHeight;
+		 
+		document.write("Trình duyệt có chiều rộng là: " + width + "<br/>");
+		document.write("Trình duyệt có chiều cao là: " + height + "<br/>");
+		var windowChild = null;
+	         
+	        function openWindow()
+	        {
+	            windowChild = window.open('http://www.fujitechjsc.com', "windowChild", "width=500, height=500");
+	            windowChild.moveTo(500, 100);
+	            windowChild.focus();
+	            return false;
+	           
+	        }
+	         
+	        function closeWindow()
+	        {
+	            windowChild.close()
+	            return false;
+	        }
+	</script>
+	
+      <a href="#" onclick="return openWindow()">Open</a>
+      <a href="#" onclick="return closeWindow()">Close</a>
+
+</body>
+</html>

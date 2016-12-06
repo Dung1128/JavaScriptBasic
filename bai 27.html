@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>bai 27</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<h3> break - continue trong javascript</h3>
+	<script type="text/javascript">
+		var i = 1;
+ 
+		var i = 1;
+ 
+		while (i <= 100)
+		{
+		    if (i % 7 == 0) {
+		        i++;
+		        document.write("Bỏ qua giá trị chia hết cho 7 <br/>");
+		        continue;
+		        
+		    }
+
+		    if(i % 10 == 0){
+		    	document.write("Dừng vòng lặp nếu gặp giá trị chia hết cho 10 <br/>");
+		    	break;
+		    }
+		 
+		    document.write(i + "<br/>");
+		    i++;
+		}
+	</script>
+</body>
+</html>

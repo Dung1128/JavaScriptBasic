@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>bai 43</title>
+	<meta charset="utf-8">
+	<script type="text/javascript">
+		function _startTime(){
+
+			var _today = new Date();
+			var h = _today.getHours();
+			var m = _today.getMinutes();
+			var s = _today.getSeconds();
+
+			h = _checkTime(h);
+			m = _checkTime(m);
+			s = _checkTime(s);
+
+			document.getElementById('time').innerHTML = h + ":" + m + ":" + s;
+		}
+
+		function _checkTime(i){
+			if(i < 10)
+				return "0" + i ;
+			else return i;
+
+		}
+
+		var t = setInterval(function() {_startTime();}, 500);
+
+	</script>
+</head>
+<body onload="_startTime()">
+	<h3>Hàm xử lý ngày tháng (Date) trong Javascript</h3>
+	<h4>Tạo đồng hồ online:</h4>
+	<div id="time">
+	</div>
+
+</body>
+</html>

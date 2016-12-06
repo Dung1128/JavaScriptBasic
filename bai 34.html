@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>bai 34</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<h3>BOM - Window Navigator trong Javascript</h3>
+	<script type="text/javascript">
+		if (window.cookieEnabled){
+		alert("Có bật Cookie - freetuts.net");
+		}
+		else{
+		    alert("Cookie đã bị tắt");
+		}		
+		document.write("App Name: " + window.navigator.appName + "<br/>");
+		document.write("Code Name: " + window.navigator.appCodeName + "<br/>");
+		document.write("Engine: " + navigator.product+ "<br/>");
+		document.write("Version: " + navigator.appVersion + "<br/>");
+		document.write("Hệ điều hành: " + navigator.platform + "<br/>");
+		document.write("Ngôn ngữ Browser: " + navigator.language + "<br/>");
+	</script>
+</body>
+</html>
