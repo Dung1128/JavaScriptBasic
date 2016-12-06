@@ -8,17 +8,24 @@
 	<Script language="javascript">
 		var x = prompt("nhap so x: ", '');
 		var y = prompt("Nhap so y: ", '');
-		var sum = parseInt(x) + parseInt(y);
-		var sub = parseInt(x) - parseInt(y);
-		var mul = parseInt(x) * parseInt(y);
-		var div = parseInt(x) / parseInt(y);
-		document.write("x + y = ", sum);
-		document.write("<br>");
-		document.write("x - y = ", sub);
-		document.write("<br>");
-		document.write("x * y = ", mul);
-		document.write("<br>");
-		document.write("x / y = ", div);
+
+		if (Number(x) && Number(y)){
+			var sum = parseInt(x) + parseInt(y);
+			var sub = parseInt(x) - parseInt(y);
+			var mul = parseInt(x) * parseInt(y);
+			var div = parseInt(x) / parseInt(y);
+			document.write("x + y = ", sum);
+			document.write("<br>");
+			document.write("x - y = ", sub);
+			document.write("<br>");
+			document.write("x * y = ", mul);
+			document.write("<br>");
+			document.write("x / y = ", div);
+		}
+		else{
+			alert("Error!");
+			location.reload();
+		}
 
 	</Script>
 </body>
